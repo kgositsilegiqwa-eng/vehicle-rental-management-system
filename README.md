@@ -2,49 +2,57 @@
 
 ## Overview
 
-This project is a C++ vehicle rental management application developed using Qt 6. It demonstrates object-oriented programming principles through a vehicle rental system that manages different types of vehicles.
+This project is a C++ vehicle rental management application developed using Qt 6. It demonstrates object-oriented programming principles through a desktop application designed to manage vehicle information and different vehicle types.
 
-The application uses inheritance and polymorphism to represent different vehicle types, while Qt containers and file handling support the management and storage of vehicle information.
+The project uses inheritance and polymorphism to organise vehicle classes and Qt Widgets to build the graphical user interface.
 
-## Features
+## Features and Concepts
 
-- **Object-oriented design:** Uses classes to represent vehicles and their properties.
-- **Inheritance:** Extends the base `Vehicle` class to support cars and motorcycles.
-- **Polymorphism:** Uses virtual functions to support behaviour specific to different vehicle types.
-- **Vehicle management:** Stores vehicle information, including brand, model, ID, rental price per day, and rental status.
-- **Qt containers:** Uses Qt containers to manage collections of vehicles.
-- **File handling:** Supports working with vehicle data stored in files.
-- **Graphical user interface:** Uses Qt 6 Widgets to provide a graphical interface.
+- **Object-oriented design:** Organises the application using classes and objects.
+- **Encapsulation:** Uses a base `Vehicle` class to represent vehicle information.
+- **Inheritance:** Extends the base vehicle class to represent cars and motorcycles.
+- **Polymorphism:** Applies polymorphic behaviour where supported by the class implementations.
+- **Vehicle information:** Represents properties such as brand, model, ID, rental price per day, and rental status.
+- **Graphical user interface:** Uses Qt 6 Widgets to develop the desktop interface.
 
 ## Technologies Used
 
 - C++
 - Qt 6
 - Qt Widgets
+- CMake
 - Object-oriented programming
-- File handling
-- Qt containers
 
 ## Project Structure
 
-The project contains the main application file, vehicle-related class files, and the files required to create the graphical user interface.
-
-The exact file structure depends on the files included in the project.
+| File | Description |
+|---|---|
+| `main.cpp` | Application entry point. |
+| `Vehicle.h` | Declaration of the base vehicle class. |
+| `Vehicle.cpp` | Implementation of the base vehicle class. |
+| `CarMotorcycle.h` | Declarations related to cars and motorcycles. |
+| `CarMotorcycle.cpp` | Implementations related to cars and motorcycles. |
+| `VehicleRentalWindow.h` | Declaration of the graphical user interface class. |
+| `VehicleRentalWindow.cpp` | Implementation of the graphical user interface. |
+| `CMakeLists.txt` | Defines the project configuration and build instructions for CMake. |
 
 ## Learning Objectives
 
-This project demonstrates the practical application of:
+This project provides practical experience with:
 
 - Classes and objects
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Virtual functions and destructors
-- Qt containers and iterators
-- File handling
-- Qt signals and slots
-- Graphical user interface development
+- Encapsulation and inheritance
+- Polymorphism and virtual functions
+- C++ header and implementation files
+- Qt Widgets and graphical user interface development
+- CMake project configuration
+
+## Building the Project
+
+The project uses CMake and requires Qt 6.5 or newer, including the Core and Widgets modules.
+
+To build the application, open the project in Qt Creator, configure a suitable Qt kit, and build the project using the included `CMakeLists.txt`.
 
 ## Purpose
 
-The purpose of this project is to apply C++ programming and object-oriented design concepts to a practical vehicle rental scenario. It also provides an example of developing a desktop application using Qt 6.
+The purpose of this project is to apply C++ programming and object-oriented design principles to a practical vehicle rental scenario while gaining experience developing desktop applications with Qt 6.
